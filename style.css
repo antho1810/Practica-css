@@ -51,6 +51,11 @@ hr {
   padding: 20px 0 0 20px;
 }
 
+.Home:hover {
+  background: grey;
+  border-radius: 4px;
+}
+
 .secundario {
   padding: 0 0 0 20px;
 }
@@ -64,15 +69,20 @@ hr {
   place-items: start center;
 }
 
-.Home:hover {
-  background: grey;
-  border-radius: 4px;
-}
-
 .nav{
   cursor: pointer;
   background: yellow;
+  display: flex;
+  text-align: end;
 }
+
+/* .search{
+  text-align: center;
+}
+
+.logi{
+  align-items: end;
+} */
 
 .conta{
   display: flex;
@@ -105,4 +115,17 @@ img{
 .descrip{
   padding: 2px 16px;
   
+}
+
+.sugeren{
+  position: relative;
+  left: 200px;
+  top: 70px;
+  max-width: 100vh;
+  height: 100px;
+  background-color: chartreuse;
+  outline: 2px solid #3d68c4;
+  flex-direction: row;
+  gap: 20px;
+  border-radius:20px;
 }
