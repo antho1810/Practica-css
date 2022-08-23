@@ -30,8 +30,11 @@ hr {
 }
 
 .logo img {
-  width: 15px;
-  height: 19px;
+  position: absolute;
+  width: 125px;
+  height: 37px;
+  left: 33px;
+  top: 0;
 }
 .sidebar {
   background-color: #c43535;
