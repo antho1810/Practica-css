@@ -10,21 +10,17 @@ body {
 }
 
 .padre {
-    display: flex;
+  display: flex;
 }
 
 .cont-side {
   position: absolute;
-  /* flex: 1; */
+  z-index: 1;
 }
 
-.container {
-  position: absolute;
-  /* flex: 1; */
-}
 header {
   display: flex;
-  /* position: relative; */
+  position: relative;
 }
 
 hr {
@@ -36,17 +32,21 @@ hr {
 }
 .logo {
   height: 15px;
-  padding-top: 10px;
+  margin-top: 10px;
+  /* padding-top: 10px; */
   padding-left: 20px;
   background-image: url(./img/Youtube logo.png);
 }
 
 .logo img {
   position: absolute;
-  width: 125px;
-  height: 37px;
+  width: 90px;
+  height: 30px;
   left: 33px;
+  /* top: 500px; */
   top: 0;
+  place-content: center start;
+  outline: 4px solid #3d68c4;
 }
 .sidebar {
   background-color: #c43535;
@@ -54,24 +54,22 @@ hr {
   display: flex;
   flex-direction: column;
   width: 160px;
-  /* padding: 5px 5px 10px 0; */
   cursor: pointer;
   height: 100vh;
 }
 
 .principal {
-  padding: 20px 0 0 20px;
+  padding: 20px 0 10px 20px;
 }
 
-.sidebar h3:hover {
+.cont-side .sidebar h3:hover {
   background: grey;
   border-radius: 4px;
 }
 
-/* .Home:hover {} */
 
 .secundario {
-  padding: 0 0 0 20px;
+  padding: 10px 0 10px 20px;
 }
 
 .subscrip {
@@ -83,11 +81,16 @@ hr {
   place-items: start center;
 }
 
+.container {
+  position: absolute;
+}
+
 .nav {
   cursor: pointer;
-  background: yellow;
+  background: rgb(108, 23, 148);
   display: flex;
   text-align: end;
+  left: 270px;
   gap: 5px;
 }
 
@@ -119,10 +122,9 @@ hr {
 
 img {
   /* justify-items: center; */
-  padding: 0 10px 0 10px;
+  /* padding: 0 10px 0 10px; */
   align-items: center;
   width: 275px;
-  height: 154px;
   left: 266px;
   top: 125px;
 }
@@ -150,20 +152,31 @@ img {
 }
 
 .conta2 {
-  display: flex;
   position: relative;
-  left: -20;
-  top: 40px;
+  display: flex;
   flex-direction: row;
+  left: 0;
+  top: 40px;
   gap: 15px;
   border-radius: 20px;
 }
 
 .img2 {
-  padding: 0 10px 0 10px;
   align-items: center;
   width: 275px;
-  height: 154px;
   left: 266px;
   top: 522px;
+}
+
+.ops{
+  display: flex;
+  gap: 4px;
+}
+
+.ops i{
+border-radius: 5px;
+background: #b6b6b6;
+font-weight: bold;
+margin: auto;
+padding: auto;
 }
